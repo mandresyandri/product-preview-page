@@ -1,0 +1,105 @@
+/* The CSS from frontend mentor */ 
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* My custom CSS */ 
+body {
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Fraunces', serif; */
+}
+
+.container {
+    display: flex;
+    border-style: none;
+    width: 600px;
+    height: 480px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2.5%;
+    position:absolute;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+
+}
+
+.left-content {
+    border-radius: 5%;
+}
+
+img {
+    width: 300px;
+    height: 480px;
+    border-top-left-radius: 2.5%;
+    border-bottom-left-radius: 2.5%;
+}
+
+.right-content {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    padding-top: 2.5%;
+}
+
+h4{
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: 100;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-description {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.display-price {
+    display: flex;
+    padding: 2%;
+    margin: 1px;
+}
+
+.true-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    margin-right: 9px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+}
+
+.road-price {
+    margin-top: 9px;
+    text-decoration: line-through;
+    position: relative;
+}
+
+.btn {
+    margin-top: 15px;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    position: relative;
+    width: 230px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: hsl(158, 37%, 19%);
+}
