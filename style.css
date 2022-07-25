@@ -16,11 +16,10 @@ body {
 
 .container {
     display: flex;
+    flex-direction: row;
     border-style: none;
     width: 600px;
     height: 480px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 2.5%;
     position:absolute;
     top: 10%;
     bottom: 0;
@@ -34,17 +33,21 @@ body {
     border-radius: 5%;
 }
 
-img {
+.responsive {
     width: 300px;
     height: 480px;
     border-top-left-radius: 2.5%;
     border-bottom-left-radius: 2.5%;
 }
 
+
 .right-content {
-    padding-left: 3.5%;
-    padding-right: 3.5%;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 2.5%;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
 }
 
 h4{
@@ -61,7 +64,7 @@ h1 {
 
 .product-description {
     line-height: 1.8;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .display-price {
@@ -102,4 +105,45 @@ button {
 
 button:hover {
     background-color: hsl(158, 37%, 19%);
+}
+
+/* Responsive design  */
+@media screen and (max-width: 600px) {
+    .container{
+        border-style: solid;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+    h1{
+        /* font-weight: 300; */
+    }
+
+    h4{
+        /* font-weight: 300; */
+    }
+    
+    .responsive {
+        border-style: solid;
+        margin-left: 25px;
+        border-top-left-radius: 2.5%;
+        border-top-right-radius: 2.5%;
+        border-bottom-left-radius: 0%;
+        align-items: center;
+        width: 90%;
+        height: auto;
+    }
+
+    .right-content{
+        border-style: solid;
+        margin-top: -1em;
+        width: 80%;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 2.5%;
+        }
+    button {
+        width: 100%;
+        margin-bottom: 19px;
+    }
 }
