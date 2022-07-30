@@ -59,9 +59,11 @@ h1 {
     font-family: 'Fraunces', serif;
     color: hsl(212, 21%, 14%);
     font-weight: 700;
+    font-size: 2.5em;
 }
 
 .product-description {
+    margin-top: -8px;
     line-height: 1.8;
     font-size: 0.9em;
 }
@@ -131,7 +133,7 @@ button:hover {
     }
 
     p {
-        font-size: 0.87em;
+        font-size: 0.97em;
     }
 
     .responsive {
@@ -153,5 +155,9 @@ button:hover {
     button {
         width: 100%;
         margin-bottom: 19px;
+    }
+
+    .btn {
+        margin-bottom: 10px;
     }
 }
